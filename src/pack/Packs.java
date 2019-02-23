@@ -8,8 +8,8 @@ import java.util.List;
 public class Packs {
     private final List<Pack> packs;
 
-    private Packs(List<Pack> boxes) {
-        this.packs = boxes;
+    private Packs(List<Pack> packs) {
+        this.packs = packs;
     }
 
     public static Packs getPacksFromDimensions(List<Dimensions> dimensionsList) {
@@ -24,7 +24,7 @@ public class Packs {
         return new Packs(packs);
     }
 
-    List<Pack> getBoxes() {
+    List<Pack> getPacks() {
         return packs;
     }
 }
