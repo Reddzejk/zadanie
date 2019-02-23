@@ -14,6 +14,6 @@ public class Main {
         Packs packs = Packs.getPacksFromDimensions(dimensions);
         Packer packer = new Packer();
         int quantity = packer.countPaperQuantityCounter(packs);
-        System.out.println(quantity + " dm2");
+        System.out.println(quantity + "dm2");
     }
 }

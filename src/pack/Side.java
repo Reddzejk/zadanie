@@ -9,7 +9,7 @@ public class Side implements Area {
     }
 
     @Override
-    public int countAreaSuze() {
+    public int countAreaSize() {
         return x * y;
     }
 }

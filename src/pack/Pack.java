@@ -13,13 +13,13 @@ public class Pack implements Area {
 
     int getSmallestAreaSize() {
         return IntStream
-                .of(front.countAreaSuze(), bottom.countAreaSuze(), side.countAreaSuze())
+                .of(front.countAreaSize(), bottom.countAreaSize(), side.countAreaSize())
                 .min()
                 .getAsInt();
     }
 
     @Override
-    public int countAreaSuze() {
-        return 2 * front.countAreaSuze() + 2 * bottom.countAreaSuze() + 2 * side.countAreaSuze();
+    public int countAreaSize() {
+        return 2 * front.countAreaSize() + 2 * bottom.countAreaSize() + 2 * side.countAreaSize();
     }
 }
